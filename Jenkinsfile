@@ -24,8 +24,16 @@ pipeline{
             steps{
                 script{
                     bat 'start /b npm start'
-                    bat 'wait-on http://localhost:8080'
-                    bat 'npm test'
+                    bat 'start npm test'
+                }
+            }
+        }
+         stage("run tests")
+        {
+            steps{
+                script{
+                    bat 'start npm test'
+                    
                 }
             }
         }
