@@ -2,7 +2,7 @@ pipeline{
     agent any
 
 
-    stage{
+    stages{
         stage('Checkout'){
             steps{
                 git branch: 'main', url: "https://github.com/George26g/StudentRegistryAppDemo"
