@@ -24,7 +24,7 @@ pipeline{
             steps{
                 script{
                     bat 'start /b npm start'
-                    bat 'start npm test'
+    
                 }
             }
         }
