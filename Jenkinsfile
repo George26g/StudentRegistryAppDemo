@@ -22,7 +22,7 @@ pipeline{
         stage("Start application and run tests")
         {
             steps{
-                skript{
+                script{
                     bat 'npm start &'
                     bat 'wait-on http://localhost:8081'
                     bat 'npm test'
